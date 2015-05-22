@@ -2,7 +2,7 @@
 
 pkgname=lightdm-webkit-lowpoly-theme
 _pkgname=lowpoly
-pkgver=v0.1.0
+pkgver=0.1.0
 pkgrel=1
 pkgdesc="A minimalistic theme for lightdm-webkit2-greeter"
 arch=('any')
