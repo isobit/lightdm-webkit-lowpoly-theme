@@ -1,0 +1,7 @@
+[theme]
+name=lowpoly
+version=1.0.0
+description=Lowpoly Theme
+engine=lightdm-webkit2-greeter
+url=index.html
+session=cinnamon

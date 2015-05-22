@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Iso Theme">
+		<meta name="author" content="Josh Glendenning">
+		<title>Iso Theme</title>
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+		<script type="text/javascript" src="js/mock.js"></script>
+		<script type="text/javascript" src="js/vue.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body id="main">
+		<div id="iso" v-el="iso"></div>
+		<form id="loginForm" v-on="submit: login">
+			<select options="sessionOptions" v-model="sessionKey" class="fr"></select>
+			<select options="userOptions" v-model="userKey" class="fr" style="margin-right: 1em;"></select>
+			<br>
+			<input id="password" type="password" class="fr" autofocus
+				v-model="password" 
+				v-attr="disabled: !passwordPrompt" 
+				v-el="password">
+		</form>
+		<pre id="debug" v-show="showDebug">{{debugHistory | json 4}}</pre>
+	</body>
+</html>

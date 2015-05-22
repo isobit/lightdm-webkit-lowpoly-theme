@@ -1,0 +1,51 @@
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #333;
+	background: url("../img/lowpoly.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+	font-size: 40px;
+}
+.fl { float: left; }
+.fr {float: right;}
+a {
+	color: #CCC;
+}
+a:hover {
+	color: #EEE;
+}
+#iso {
+	position: fixed;
+	top: 5%;
+	bottom: 15%;
+	left: 10%;
+	right: 10%;
+	z-index: -1;
+}
+#loginForm {
+	z-index: 1;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	left: 1em;
+	max-height: 100vh;
+	text-align: right;
+}
+#password {
+	width: 10em;
+	max-width: 100%;
+	padding: 0.25em;
+	background-color: #555;
+	border: 1px solid #666;
+	color: white;
+	font-size: 40px;
+	transition: background-color 0.5s ease;
+}
+#debug {
+	padding: 3em;
+	font-size: 12px;
+}
